@@ -5,7 +5,7 @@ import kotlin.math.pow
 
 class Parser(private val lexer: Lexer) {
 
-    private var current : Lexeme = Lexeme(LexemeType.EOF, "EOF")
+    private lateinit var current : Lexeme
 
     fun parse() : Double {
         nextLexeme()
